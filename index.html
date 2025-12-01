@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Frontend Mentor | Conference ticket generator</title>
+ <link rel="icon" href="Assets/images/favicon-32x32.png">
+ <link rel="stylesheet" href="index.css">
+ <script type="module" src="mian.js"></script>
+</head>
+<body>
+
+    <!-- FORM QUESTION -->
+
+  <div class="form-question">
+
+    <!-- LOGO -->
+     <div class="logo">
+        <img src="Assets/images/logo-full.svg" alt="Logo of coding conf">
+     </div>
+
+     <!-- WRITE UP -->
+
+     <div class="write-up">
+        <div class="h1">
+            <h1 class="h1">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        </div>
+
+        <div class="write-sub">
+            <p class="sub">
+                Secure your spot at next years's biggest coding Conference.
+            </p>
+        </div>
+     </div>
+
+   <!--   FORM -->
+
+
+    <div class="form" id="formQuestion">
+
+        <!-- UPLOAD FOR DRAG AND DROP -->
+          <label class="title">Upload Avatar</label>
+            <div class="upload">
+             
+              <label for="fileInput" class="upload-area" id="dropArea">
+
+                <div class="first" id="first">
+                  <img src="Assets/images/icon-upload.svg" alt="Upload Icon" class="upload-icon">
+
+                  <div class="placeholder">
+                      <p class="p-upload">Drag and drop or click to upload</p>
+                  </div>
+                </div>
+
+
+                <!-- PREVIEW -->
+                 <div class="preview" id="preview">
+                  <img id="previewImg" src="" alt="" width="80px" height="80px">
+                  <div class="actions">
+                    <button id="removeBtn" class="remove-btn">Remove image</button>
+                    <button id="changeBtn" class="change-btn">Change image</button>
+                  </div>
+                 </div> 
+
+                
+               <input type="file" id="fileInput" accept="image/*" hidden>
+              </label>
+
+            </div>
+
+            <div class="info-1" id="infoOne">
+              <img src="Assets/images/icon-info.svg" alt="Information Icon" class="info-icon">
+              <p class="info-txt"><small>Uplaod your photo (JPG or PNG, max size: 2mb).</small></p>
+            </div>
+
+            
+              <div class="error-mess-1" id="errorMessOne">
+                <img src="Assets/images/icon-info-error.svg" alt="Error information logo" class="error-img" >
+               <p class="error">file too large. Please upload a photo under 2mb</p>
+              </div>
+
+
+            <!-- FULL NAME -->
+              <div class="name-input">
+                <label for="fullName" class="full-name-label">Full name</label>
+                <input  type="text" class="full-name-input" id="fullName">
+              </div> 
+
+              <!-- EMAIL -->
+                <div class="email-input" id="emailInput">
+                  <label for="email" class="email-name-label">Email Address</label>
+                  <input  type="text" class="email-name-input" id="email" placeholder="example@email.com">
+
+                  <div class="email-error" id="emailError">
+                    <img src="Assets/images/icon-info-error.svg" alt="Error-message-icon" class="email-err-pic">
+
+                    <p class="email-p-error" id="emailErrorMess">
+                      <small>Please enter a valid email addresss</small> 
+                    </p>
+                  </div>
+                </div> 
+
+             <!--  GITHUB PROFILE -->
+              <div class="github-input">
+                <label for="github" class="github-name-label">Github Username</label>
+                <input  type="text" class="github-name-input" id="github" placeholder="@yourusername">
+              </div> 
+
+
+              <!-- SUBMIT BUTTON -->
+
+              <button class="submit-btn" id="submitBtn" type="submit">
+                Generate My Ticket 
+              </button>
+    </div>
+
+  </div>
+
+
+
+<!--   TICKET  -->
+
+  <div class="ticket">
+
+    <!-- LOGO -->
+     <div class="logo">
+        <img src="Assets/images/logo-full.svg" alt="Logo of coding conf">
+     </div>
+
+ 
+   <!--   WRITE UP -->
+
+    <div class="ticket-write-up"> 
+
+      <div class="ticket-h2">
+        <h2 class="tic-h2">
+          Congrats, <span class="highlight" id="highLight">Jonatan Kristof!</span> Your ticket is ready. 
+        </h2>
+      </div>
+
+      <div class="ticket-sup">
+        <p class="tic-p">
+          We've emailed your ticket to <span class="p-high" id="emailHigh">jonatan@email.com</span> and will send updates in the run up to the event.
+        </p>
+      </div>
+
+      <div class="ticket-image">
+        <div class="tic-img">
+
+          <div class="ticket-information">
+
+            
+             
+            <div class="ticket-words">
+              <div class="ticket-logo">
+                <img src="Assets/images/logo-full.svg" alt="Coding conf logo" class="tic-logo">
+              </div>
+              <div class="date-and-time">
+                <p class="d-and-t">
+                  Jan 31, 2026 / Austin, Tx
+                </p>
+              </div>
+            </div>
+
+            <div class="user-information">
+              <div class="user-picture">
+                <img id="imageAvatar" alt="Image of a guy" class="image-avatar" src="" >
+              </div> 
+
+
+              <div class="user-text">
+                <div class="user-name">
+                  <p class="us-name" id="highLightTwo">Jonatan Kristof</p>
+                </div>
+                <div class="user-github">
+                  <img src="Assets/images/icon-github.svg" alt="Github logo" >
+                  <p class="github-name" id="githubName">@jonatankristof0101</p>
+                </div>
+              </div>
+          
+            </div>
+
+              <div class="ticket-number">
+                 <p class="number" id="digits">&#35;
+01609</p>
+                </div>
+          </div>
+
+        </div>
+      </div>
+     
+    </div>
+
+
+  </div>
+
+
+
+
+</body>
+</html>
+
