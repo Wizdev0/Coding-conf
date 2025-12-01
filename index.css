@@ -435,8 +435,9 @@ body{
         background:url("Assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg") bottom left / 170px no-repeat fixed , 
         url("Assets/images/pattern-squiggly-line-top.svg") top right / 170px no-repeat fixed,  
         url("Assets/images/pattern-lines.svg") center no-repeat fixed,  url("Assets/images/pattern-circle.svg") left top / 170px no-repeat fixed,
-        url("Assets/images/background-mobile.png");
-background-color: blue;
+        url("Assets/images/background-mobile.png") center / cover no-repeat fixed;
+
+
 
     }
 
